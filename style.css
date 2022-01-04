@@ -112,6 +112,7 @@ body {
   letter-spacing: 2px;
   margin: 20px;
   text-align: center;
+  opacity: 0;
 }
 .nav-container.active h1 {
   text-shadow: 0 3px 3px rgba(0, 0, 0, 0 0.3);
@@ -126,10 +127,15 @@ body {
   transition: cubic-bezier(0.1, 0.2, 0.3, 1.4) 0.55s;
 }
 
-.main-nav-list a {
+.main-nav-list.active a {
   opacity: 1;
   color: #ddd;
 }
 .main-nav-list a:hover {
   text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 32px;
 }
